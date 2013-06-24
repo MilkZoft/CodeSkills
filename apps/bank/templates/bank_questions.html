@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+	{% for question in questions %}
+		<h2>{{ question.question_en }}</h2>
+		<a href="bank/questions/show/{{ question.id }} ">Show question</a>
+	{% empty %}
+		<p>There are no questions</p>
+	{% endfor %}
+{% endblock content %}
