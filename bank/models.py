@@ -13,6 +13,7 @@ class Technologies(models.Model):
 		return self.technology
 
 	class Meta:
+		ordering = ('technology',)
 		verbose_name = u'Technology'
 		verbose_name_plural = u'Technologies'
 
