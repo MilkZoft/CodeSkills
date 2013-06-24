@@ -23,7 +23,7 @@ class Difficulty_LevelAdmin(admin.TabularInline):
 
 class QuestionsAdmin(admin.ModelAdmin):
 	list_display = ('id', 'developer_level', 'difficulty_level', 'question_en',)
-	list_filter = ('developer_level', 'difficulty_level',)
+	list_filter = ('developer_level', 'difficulty_level', 'technology',)
 	search_fields = ['question_en'];
 
 admin.site.register(Questions, QuestionsAdmin)
