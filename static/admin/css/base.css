@@ -413,12 +413,12 @@ table.orderable-initalized .order-cell, body>tr>td.order-cell {
 
 #id_categories, #id_profiles {
     height: 180px;
-    width: 170px;
+    width: 220px;
 }
 
 #id_technology {
     height: 250px;
-    width: 170px;
+    width: 220px;
 }
 
 input, textarea, select, .form-row p {
