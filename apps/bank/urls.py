@@ -1,4 +1,4 @@
-from django.conf.urls.default import *
+from django.conf.urls.defaults import *
 
 urlspatterns = patterns(
 	'apps.bank.views',
