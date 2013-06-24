@@ -4,6 +4,7 @@ from bank.models import Technologies, Categories, Developer_Level, Difficulty_Le
 class TechnologiesAdmin(admin.TabularInline):
 	model = Technologies
 	extra = 0
+	list_display = ('common', 'technology',)
 
 class ProfilesAdmin(admin.TabularInline):
 	model = Profiles
