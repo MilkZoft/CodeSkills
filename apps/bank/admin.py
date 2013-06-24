@@ -1,5 +1,5 @@
 from django.contrib import admin
-from bank.models import Technologies, Categories, Developer_Level, Difficulty_Level, Profiles, Questions
+from apps.bank.models import Technologies, Categories, Developer_Level, Difficulty_Level, Profiles, Questions
 
 class TechnologiesAdmin(admin.TabularInline):
 	model = Technologies
