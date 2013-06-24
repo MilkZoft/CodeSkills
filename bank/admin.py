@@ -3,24 +3,24 @@ from bank.models import Technologies, Categories, Developer_Level, Difficulty_Le
 
 class TechnologiesAdmin(admin.TabularInline):
 	model = Technologies
-	extra = 0
-	ordering = ('-common',)
+	extra = 1
+	ordering = ('common',)
 
 class ProfilesAdmin(admin.TabularInline):
 	model = Profiles
-	extra = 0
+	extra = 1
 
 class CategoriesAdmin(admin.TabularInline):
 	model = Categories
-	extra = 0
+	extra = 1
 
 class Developer_LevelAdmin(admin.TabularInline):
 	model = Developer_Level
-	extra = 0
+	extra = 1
 
 class Difficulty_LevelAdmin(admin.TabularInline):
 	model = Difficulty_Level
-	extra = 0
+	extra = 1
 
 class QuestionsAdmin(admin.ModelAdmin):
 	list_display = ('id', 'developer_level', 'difficulty_level', 'question_en',)
