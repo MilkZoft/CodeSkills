@@ -8,7 +8,7 @@ def index(request):
 	questions = Questions.objects.all()
 
 	return render_to_response(
-		'bank/questions.html',
+		'questions.html',
 		RequestContext(request, locals())
 	)
 
@@ -26,6 +26,6 @@ def showQuestion(request, id):
 	question = get_object_or_404(Questions, id = id)
 
 	return render_to_response(
-		'bank/question.html',
+		'question.html',
 		RequestContext(request, locals())
 	)
