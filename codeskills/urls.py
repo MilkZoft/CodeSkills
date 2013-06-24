@@ -7,6 +7,6 @@ urlpatterns = patterns(
 	'',
    	url(r'^', include('apps.bank.urls')),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root':'settings.MEDIA_ROOT'}),
-    url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root':'settings.STATIC_ROOT'}),
+    url(r'^public/media/(?P<path>.*)$', 'django.views.static.serve', {'document_root':'settings.MEDIA_ROOT'}),
+    url(r'^public/static/(?P<path>.*)$', 'django.views.static.serve', {'document_root':'settings.STATIC_ROOT'}),
 )
