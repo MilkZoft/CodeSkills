@@ -9,11 +9,13 @@ class Technologies(models.Model):
 		help_text = 'Write a technology'
 	)
 
+	common = models.BooleanField(default = 0)
+
 	def __unicode__(self):
 		return self.technology
 
 	class Meta:
-		ordering = ('technology',)
+		ordering = ('common', 'technology',)
 		verbose_name = u'Technology'
 		verbose_name_plural = u'Technologies'
 
