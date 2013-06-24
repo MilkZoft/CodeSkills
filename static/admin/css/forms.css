@@ -192,6 +192,7 @@ body.popup .submit-row {
 
 .vSelectMultipleField {
     vertical-align: top !important;
+    height: 350px;
 }
 
 .vCheckboxField {
