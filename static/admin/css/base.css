@@ -411,8 +411,12 @@ table.orderable-initalized .order-cell, body>tr>td.order-cell {
 
 /* FORM DEFAULTS */
 
-#id_categories, #id_profiles, #id_technology {
+#id_categories, #id_profiles {
     height: 180px;
+}
+
+#id_technology {
+    height: 250px;
 }
 
 input, textarea, select, .form-row p {
