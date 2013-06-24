@@ -411,12 +411,12 @@ table.orderable-initalized .order-cell, body>tr>td.order-cell {
 
 /* FORM DEFAULTS */
 
-#id_categories, #id_profiles {
+select#id_categories, select#id_profiles {
     height: 180px;
     width: 220px;
 }
 
-#id_technology {
+select#id_technology {
     height: 250px;
     width: 220px;
 }
