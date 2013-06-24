@@ -94,7 +94,9 @@ class Questions(models.Model):
 		help_text = 'Write the Spanish question'
 	)
 
-	answer = models.TextField()
+	answer_en = models.TextField()
+
+	answer_es = models.TextField()
 
 	tags = models.CharField(
 		'Tags',
