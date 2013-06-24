@@ -410,6 +410,9 @@ table.orderable-initalized .order-cell, body>tr>td.order-cell {
 }
 
 /* FORM DEFAULTS */
+input#id_question_en, input#id_question_es {
+    width: 610px;
+}
 
 select#id_categories, select#id_profiles {
     height: 180px;

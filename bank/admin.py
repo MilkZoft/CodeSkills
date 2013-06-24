@@ -4,7 +4,6 @@ from bank.models import Technologies, Categories, Developer_Level, Difficulty_Le
 class TechnologiesAdmin(admin.TabularInline):
 	model = Technologies
 	extra = 1
-	ordering = ('-common', 'technology',)
 
 class ProfilesAdmin(admin.TabularInline):
 	model = Profiles
