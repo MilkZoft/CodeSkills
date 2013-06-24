@@ -9,8 +9,6 @@ class Technologies(models.Model):
 		help_text = 'Write a technology'
 	)
 
-	common = models.BooleanField(default = 0)
-
 	def __unicode__(self):
 		return self.technology
 
