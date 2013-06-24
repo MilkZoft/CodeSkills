@@ -15,7 +15,7 @@ class Technologies(models.Model):
 		return self.technology
 
 	class Meta:
-		ordering = ('common',)
+		ordering = ('-common',)
 		verbose_name = u'Technology'
 		verbose_name_plural = u'Technologies'
 
