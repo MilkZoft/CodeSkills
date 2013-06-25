@@ -1,11 +1,13 @@
 from django.contrib import admin
 from apps.clients.models import *
+import pprint
 
 class CountriesAdmin(admin.TabularInline):
 	model = Countries
 	extra = 0
 
 class CitiesAdmin(admin.TabularInline):
+	pprint.pprint(Cities)
 	model = Cities
 	extra = 0
 
