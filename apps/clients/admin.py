@@ -2,7 +2,7 @@ from django.contrib import admin
 from apps.clients.models import Locations, Companies
 
 class CompaniesAdmin(admin.ModelAdmin):
-	list_display = ('id', 'company', 'email', 'twitter', 'phone', 'industry')
+	list_display = ('company', 'email', 'twitter', 'phone', 'industry')
 	list_filter = ('industry',)
 	search_fields = ['company']
 	extra = 0
