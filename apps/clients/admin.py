@@ -3,7 +3,7 @@ from apps.clients.models import Locations, Companies
 
 class CompaniesAdmin(admin.ModelAdmin):
 	list_display = ('company', 'email', 'twitter', 'phone', 'industry', 'location')
-	list_filter = ('industry',)
+	list_filter = ('industry', 'location',)
 	search_fields = ['company']
 	extra = 0
 
