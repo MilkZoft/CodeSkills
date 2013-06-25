@@ -36,7 +36,8 @@ TIME_ZONE = 'America/Mexico_City'
 LANGUAGE_CODE = 'es-mx'
 
 LANGUAGES = (
-    ('es', 'Español'),
+    ('es', _('Spanish')),
+    ('en', _('English')),
 )
 
 LOCALE_PATHS = (
