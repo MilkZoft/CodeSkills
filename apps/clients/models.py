@@ -11,8 +11,8 @@ class Locations(models.Model):
 		return u'%s, %s' % (self.city, self.country)
 
 	class Meta:
-		verbose_name = _('Location')
-		verbose_name_plural = _('Locations')	
+		verbose_name = u_('Location')
+		verbose_name_plural = u_('Locations')	
 
 class Companies(models.Model):
 	location = models.ForeignKey(Locations)
