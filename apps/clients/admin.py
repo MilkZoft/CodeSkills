@@ -7,8 +7,8 @@ class CompaniesAdmin(admin.ModelAdmin):
 	search_fields = ['company']
 	extra = 0
 
-	def linkToTwitter(self, obj):
-		return u'<a href="http://twitter.com/%s" target="_blank">%s</a>' % (obj.twitter)
+	def linkToTwitter(self, Companies):
+		return u'<a href="http://twitter.com/%s" target="_blank">%s</a>' % (Companies.twitter)
 
 admin.site.register(Locations)
 admin.site.register(Companies, CompaniesAdmin)
