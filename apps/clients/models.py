@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 from datetime import datetime
+from django.utils.translation import ugettext as _
 
 class Locations(models.Model):
 	country = models.CharField('Country', max_length = 100)
@@ -10,8 +11,8 @@ class Locations(models.Model):
 		return u'%s, %s' % (self.city, self.country)
 
 	class Meta:
-		verbose_name = u'Location'
-		verbose_name_plural = u'Locations'	
+		verbose_name = _('Location')
+		verbose_name_plural = _('Locations')	
 
 class Companies(models.Model):
 	location = models.ForeignKey(Locations)

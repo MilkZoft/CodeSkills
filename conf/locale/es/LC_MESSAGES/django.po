@@ -1,15 +1,24 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeSkills\n"
-"POT-Creation-Date: 2013-06-25 13:23-0600\n"
-"PO-Revision-Date: 2013-06-25 13:24-0600\n"
+"POT-Creation-Date: 2013-06-25 13:29-0600\n"
+"PO-Revision-Date: 2013-06-25 13:29-0600\n"
 "Last-Translator: \n"
 "Language-Team:  <contact@codeskills.net>\n"
+"Language: Spanish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.5\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
-"Language: Spanish\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: /Applications/MAMP/htdocs/CodeSkills\n"
+
+#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:14
+msgid "Location"
+msgstr "Ubicación"
+
+#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:15
+msgid "Locations"
+msgstr "Ubicaciones"
