@@ -10,9 +10,10 @@ class CitiesAdmin(admin.TabularInline):
 	extra = 0
 
 class CompaniesAdmin(admin.ModelAdmin):
-	model = Companies
-	extra = 0
+	list_display = ('id', 'company',)
+	search_fields = ['company']
+	extra = 1
 
-admin.site.register(CompaniesAdmin)
+admin.site.register(Companies, CompaniesAdmin)
 admin.site.register(CitiesAdmin)
 admin.site.register(CountriesAdmin)
