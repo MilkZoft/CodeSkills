@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeSkills\n"
-"POT-Creation-Date: 2013-06-25 14:11-0600\n"
-"PO-Revision-Date: 2013-06-25 14:12-0600\n"
+"POT-Creation-Date: 2013-06-25 16:47-0600\n"
+"PO-Revision-Date: 2013-06-25 16:47-0600\n"
 "Last-Translator: \n"
 "Language-Team:  <contact@codeskills.net>\n"
 "Language: Spanish\n"
@@ -14,6 +14,11 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: /Applications/MAMP/htdocs/CodeSkills\n"
+
+#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/admin.py:18
+#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:22
+msgid "Email"
+msgstr "Correo electrónico"
 
 #: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:14
 msgid "Location"
@@ -34,10 +39,6 @@ msgstr "Contacto"
 #: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:21
 msgid "Address"
 msgstr "Dirección"
-
-#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:22
-msgid "Email"
-msgstr "Correo electrónico"
 
 #: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:23
 msgid "Skype"
@@ -68,5 +69,9 @@ msgid "Mobile"
 msgstr "Celular"
 
 #: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:30
+msgid "Size"
+msgstr "Tamaño"
+
+#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:31
 msgid "Industry"
 msgstr "Industria"
