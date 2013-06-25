@@ -12,8 +12,11 @@ class CompaniesAdmin(admin.ModelAdmin):
 		return '<a href="mailto:' + Companies.email + '">' + Companies.email + '</a>'
 
 	def linkToTwitter(self, Companies):
-		return '<a href="http://twitter.com/' + Companies.twitter + '" target="_blank">' + Companies.twitter + '</a>'
-
+		if Companies.twitter != '@':
+			return '<a href="http://twitter.com/' + Companies.twitter + '" target="_blank">' + Companies.twitter + '</a>'
+		else:
+			return ''
+			
 	linkToEmail.allow_tags = True
 	linkToEmail.short_description = _('Email') 
 	linkToTwitter.allow_tags = True
