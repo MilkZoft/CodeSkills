@@ -22,5 +22,6 @@ class CompaniesAdmin(admin.ModelAdmin):
 	linkToTwitter.allow_tags = True
 	linkToTwitter.short_description = 'Twitter' 
 	showLocation.short_description = _("Location")
+	
 admin.site.register(Locations)
 admin.site.register(Companies, CompaniesAdmin)
