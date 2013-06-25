@@ -14,7 +14,9 @@ class CompaniesAdmin(admin.ModelAdmin):
 		return '<a href="http://twitter.com/' + Companies.twitter + '" target="_blank">' + Companies.twitter + '</a>'
 
 	linkToEmail.allow_tags = True
+	linkToEmail.short_description = 'Email' 
 	linkToTwitter.allow_tags = True
+	linkToTwitter.short_description = 'Twitter' 
 
 admin.site.register(Locations)
 admin.site.register(Companies, CompaniesAdmin)
