@@ -41,7 +41,7 @@ LANGUAGES = (
 )
 
 LOCALE_PATHS = (
-    '/home/czantany/public_html/CodeSkills/conf/locale', 
+    '/home/czantany/public_html/CodeSkills/locale', 
 )
 
 SITE_ID = 1
