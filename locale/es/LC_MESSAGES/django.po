@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeSkills\n"
-"POT-Creation-Date: 2013-06-25 14:05-0600\n"
-"PO-Revision-Date: 2013-06-25 14:05-0600\n"
+"POT-Creation-Date: 2013-06-25 14:11-0600\n"
+"PO-Revision-Date: 2013-06-25 14:12-0600\n"
 "Last-Translator: \n"
 "Language-Team:  <contact@codeskills.net>\n"
 "Language: Spanish\n"
@@ -26,3 +26,47 @@ msgstr "Ubicaciones"
 #: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:19
 msgid "Company"
 msgstr "Empresa"
+
+#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:20
+msgid "Contact"
+msgstr "Contacto"
+
+#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:21
+msgid "Address"
+msgstr "Dirección"
+
+#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:22
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:23
+msgid "Skype"
+msgstr "Skype"
+
+#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:24
+msgid "Website"
+msgstr "Sitio Web"
+
+#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:25
+msgid "Linkedin"
+msgstr "Linkedin"
+
+#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:26
+msgid "Twitter"
+msgstr "Twitter"
+
+#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:27
+msgid "Facebook"
+msgstr "Facebook"
+
+#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:28
+msgid "Phone"
+msgstr "Teléfono"
+
+#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:29
+msgid "Mobile"
+msgstr "Celular"
+
+#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:30
+msgid "Industry"
+msgstr "Industria"
