@@ -6,7 +6,6 @@ class CountriesAdmin(admin.TabularInline):
 	extra = 0
 
 class CitiesAdmin(admin.TabularInline):
-	pprint.pprint(Cities)
 	model = Cities
 	extra = 0
 
