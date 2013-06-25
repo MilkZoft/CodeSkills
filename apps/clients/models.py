@@ -14,11 +14,12 @@ class Locations(models.Model):
 		verbose_name_plural = u'Locations'	
 
 class Companies(models.Model):
-	location  = models.ForeignKey(Locations)
+	location = models.ForeignKey(Locations)
 	company  = models.CharField('Company', max_length = 150)
 	contact  = models.CharField('Contact', null = True, blank = True, max_length = 100)
 	address  = models.TextField(null = True, blank = True)
 	email    = models.CharField('Email', null = True, blank = True, max_length = 120)
+	skype 	 = models.CharField('Skype', null = True, blank = True, max_length = 60)
 	website  = models.CharField('website', null = True, blank = True, max_length = 100)
 	linkedin = models.CharField('Linkedin', null = True, blank = True, max_length = 60)
 	twitter  = models.CharField('Twitter', null = True, blank = True, max_length = 60)
