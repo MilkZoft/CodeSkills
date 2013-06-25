@@ -121,6 +121,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     'apps.bank',
+    'apps.clients',
 )
 
 # A sample logging configuration. The only tangible logging
