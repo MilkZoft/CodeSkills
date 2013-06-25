@@ -16,7 +16,7 @@ class Locations(models.Model):
 class Companies(models.Model):
 	location = models.ForeignKey(Locations)
 	company  = models.CharField('Company', max_length = 150)
-	contact  = models.CharField('Contact', null = True, blank = True, max_length = 100)
+	contact  = models.TextField(null = True, blank = True, max_length = 100)
 	address  = models.TextField(null = True, blank = True)
 	email    = models.CharField('Email', null = True, blank = True, max_length = 120)
 	skype 	 = models.CharField('Skype', null = True, blank = True, max_length = 60)
