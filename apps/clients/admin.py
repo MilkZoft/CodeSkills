@@ -4,7 +4,7 @@ from django.utils.translation import ugettext as _
 
 class CompaniesAdmin(admin.ModelAdmin):
 	list_display = ('company', 'linkToEmail', 'linkToTwitter', 'phone', 'industry', 'location')
-	list_filter = ('industry', 'location',)
+	list_filter = ('industry', 'location', 'size',)
 	search_fields = ['company']
 	extra = 0
 

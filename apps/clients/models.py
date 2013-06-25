@@ -27,6 +27,7 @@ class Companies(models.Model):
 	facebook = models.CharField(_('Facebook'), null = True, blank = True, max_length = 60)
 	phone    = models.CharField(_('Phone'), null = True, blank = True, max_length = 15)
 	mobile   = models.CharField(_('Mobile'), null = True, blank = True, max_length = 15)
+	size     = models.CharField(_('Size'), default = 'Medium', null = True, blank = True, max_length = 20)
 	industry = models.CharField(_('Industry'), default = 'Software', null = True, blank = True, max_length = 100)
 
 	def __unicode__(self):
