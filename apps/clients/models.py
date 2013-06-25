@@ -2,31 +2,19 @@
 from django.db import models
 from datetime import datetime
 
-class Countries(models.Model):
-	country = models.CharField('Country', max_length = 50)
+class Locations(models.Model):
+	country = models.CharField('Country', max_length = 100)
+	city    = models.CharField('City', max_length = 100)
 	
 	def __unicode__(self):
-		return self.country
+		return u'%s, %s' % (self.city, self.country)
 
 	class Meta:
-		ordering = ('country',)
-		verbose_name = u'Country'
-		verbose_name_plural = u'Countries'
+		verbose_name = u'Location'
+		verbose_name_plural = u'Locations'	
 
-class Cities(models.Model):
-	city = models.CharField('City', max_length = 50)
-	
-	def __unicode__(self):
-		return self.city
-
-	class Meta:
-		ordering = ('city',)
-		verbose_name = u'City'
-		verbose_name_plural = u'Cities'	
-		
 class Companies(models.Model):
-	country  = models.ForeignKey(Countries)
-	city     = models.ForeignKey(Cities)
+	location  = models.ForeignKey(Locations)
 	company  = models.CharField('Company', max_length = 150)
 	contact  = models.CharField('Contact', max_length = 100)
 	address  = models.TextField()

@@ -1,6 +1,5 @@
 from django.contrib import admin
-from apps.clients.models import Countries, Cities, Companies
+from apps.clients.models import Locations, Companies
 
-admin.site.register(Countries)
-admin.site.register(Cities)
+admin.site.register(Locations)
 admin.site.register(Companies)
