@@ -1,5 +1,5 @@
 from django.contrib import admin
-from apps.clients.models import Companies, Countries, Cities
+from apps.clients.models import *
 
 class CountriesAdmin(admin.TabularInline):
 	model = Countries
