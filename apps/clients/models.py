@@ -15,7 +15,7 @@ class Locations(models.Model):
 		verbose_name_plural = _('Locations')	
 
 class Companies(models.Model):
-	location = models.ForeignKey(Locations)
+	location = models.ForeignKey(_('Location'), Locations)
 	company  = models.CharField(_('Company'), max_length = 150)
 	contact  = models.TextField(_('Contact'), null = True, blank = True, max_length = 100)
 	address  = models.TextField(_('Address'), null = True, blank = True)
