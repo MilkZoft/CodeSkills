@@ -20,13 +20,13 @@ class Companies(models.Model):
 	address  = models.TextField(null = True, blank = True)
 	email    = models.CharField('Email', null = True, blank = True, max_length = 120)
 	skype 	 = models.CharField('Skype', null = True, blank = True, max_length = 60)
-	website  = models.CharField('website', null = True, blank = True, max_length = 100)
+	website  = models.CharField('Website', default = 'http://', null = True, blank = True, max_length = 100)
 	linkedin = models.CharField('Linkedin', null = True, blank = True, max_length = 60)
 	twitter  = models.CharField('Twitter', default = '@', null = True, blank = True, max_length = 60)
 	facebook = models.CharField('Facebook', null = True, blank = True, max_length = 60)
 	phone    = models.CharField('Phone', null = True, blank = True, max_length = 15)
 	mobile   = models.CharField('Mobile', null = True, blank = True, max_length = 15)
-	industry = models.CharField('Industry', null = True, blank = True, max_length = 100)
+	industry = models.CharField('Industry', default = 'Software', null = True, blank = True, max_length = 100)
 
 	def __unicode__(self):
 		return self.company
