@@ -14,9 +14,6 @@ class CompaniesAdmin(admin.ModelAdmin):
 	search_fields = ['company']
 	extra = 1
 
-admin.site.register(Questions, QuestionsAdmin)
-admin.site.register(Categories)
-admin.site.register(Technologies)
-admin.site.register(Developer_Level)
-admin.site.register(Difficulty_Level)
-admin.site.register(Profiles)
+admin.site.register(Companies, CompaniesAdmin)
+admin.site.register(CitiesAdmin)
+admin.site.register(CountriesAdmin)
