@@ -1,30 +1,17 @@
 from django.contrib import admin
-from apps.clients.models import Technologies, Categories, Developer_Level, Difficulty_Level, Profiles, Questions
+from apps.clients.models import Companies, Countries, Cities
 
-class TechnologiesAdmin(admin.TabularInline):
-	model = Technologies
+class CountriesAdmin(admin.TabularInline):
+	model = Countries
 	extra = 0
 
-class ProfilesAdmin(admin.TabularInline):
-	model = Profiles
+class CitiesAdmin(admin.TabularInline):
+	model = Cities
 	extra = 0
 
-class CategoriesAdmin(admin.TabularInline):
-	model = Categories
-	extra = 0
-
-class Developer_LevelAdmin(admin.TabularInline):
-	model = Developer_Level
-	extra = 0
-
-class Difficulty_LevelAdmin(admin.TabularInline):
-	model = Difficulty_Level
-	extra = 0
-
-class QuestionsAdmin(admin.ModelAdmin):
-	list_display = ('id', 'tags', 'developer_level', 'difficulty_level', 'question_en', 'question_es',)
-	list_filter = ('developer_level', 'difficulty_level', 'profiles', 'categories', 'technology',)
-	search_fields = ['question_en'];
+class CompaniesAdmin(admin.ModelAdmin):
+	list_display = ('id', 'company')
+	search_fields = ['company']
 	extra = 1
 
 admin.site.register(Questions, QuestionsAdmin)
