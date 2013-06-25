@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: CodeSkills\n"
-"POT-Creation-Date: 2013-06-25 13:29-0600\n"
-"PO-Revision-Date: 2013-06-25 13:29-0600\n"
+"POT-Creation-Date: 2013-06-25 14:05-0600\n"
+"PO-Revision-Date: 2013-06-25 14:05-0600\n"
 "Last-Translator: \n"
 "Language-Team:  <contact@codeskills.net>\n"
 "Language: Spanish\n"
@@ -22,3 +22,7 @@ msgstr "Ubicación"
 #: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:15
 msgid "Locations"
 msgstr "Ubicaciones"
+
+#: /Applications/MAMP/htdocs/CodeSkills/apps/clients/models.py:19
+msgid "Company"
+msgstr "Empresa"
