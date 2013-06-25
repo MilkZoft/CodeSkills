@@ -8,7 +8,7 @@ class CompaniesAdmin(admin.ModelAdmin):
 	extra = 0
 
 	def linkToTwitter(self, Companies):
-		return u'<a href="http://twitter.com/%s" target="_blank">%s</a>' % (Companies.twitter)
+		return u'<a href="http://twitter.com/%s" target="_blank">%s</a>' % (Companies.twitter, Companies.twitter)
 
 admin.site.register(Locations)
 admin.site.register(Companies, CompaniesAdmin)
