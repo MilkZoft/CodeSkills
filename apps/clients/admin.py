@@ -10,5 +10,7 @@ class CompaniesAdmin(admin.ModelAdmin):
 	def linkToTwitter(self, Companies):
 		return '<a href="http://twitter.com/' + Companies.twitter + '" target="_blank">' + Companies.twitter + '</a>'
 
+	linkToTwitter.allow_tags = True
+	
 admin.site.register(Locations)
 admin.site.register(Companies, CompaniesAdmin)
