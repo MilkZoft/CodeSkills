@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<form id="users" method="post" action="/users/login">
+		<fieldset>
+			<p>
+				Username: 
+				<input name="username" type="text" />
+			</p>
+
+			<p>
+				Password:
+				<input name="password" type="password" />
+			</p>
+		</fieldset>
+	</form>
+{% endblock content %}
