@@ -127,6 +127,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'apps.bank',
     'apps.clients',
+    'apps.users',
 )
 
 # A sample logging configuration. The only tangible logging
