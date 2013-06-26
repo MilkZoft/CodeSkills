@@ -25,8 +25,8 @@ class Companies(models.Model):
 	linkedin = models.CharField(_('Linkedin'), null = True, blank = True, max_length = 60)
 	twitter  = models.CharField(_('Twitter'), default = '@', null = True, blank = True, max_length = 60)
 	facebook = models.CharField(_('Facebook'), null = True, blank = True, max_length = 60)
-	phone    = models.CharField(_('Phone'), null = True, blank = True, max_length = 15)
-	mobile   = models.CharField(_('Mobile'), null = True, blank = True, max_length = 15)
+	phone    = models.CharField(_('Phone'), null = True, blank = True, max_length = 30)
+	mobile   = models.CharField(_('Mobile'), null = True, blank = True, max_length = 20)
 	size     = models.CharField(_('Size'), default = 'Medium', null = True, blank = True, max_length = 20)
 	industry = models.CharField(_('Industry'), default = 'Software', null = True, blank = True, max_length = 100)
 
