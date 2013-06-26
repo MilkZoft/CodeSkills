@@ -3,8 +3,7 @@ from django.contrib import admin
 
 admin.autodiscover()
 
-urlpatterns = patterns(
-	'',
+urlpatterns = patterns('',
 	url(r'^users/', include('apps.users.urls')),
    	url(r'^bank/', include('apps.bank.urls')),
     url(r'^admin/', include(admin.site.urls)),
